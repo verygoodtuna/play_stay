@@ -1,27 +1,19 @@
 $(function () {
-    $('.header .gnb .game').on('click', function (){
-        $('.header .lnb_box .game').toggleClass('on')
+    $(window).on('scroll', function(){
+        let sct = $(window).scrollTop();
+        if(sct>0) { 
+            $('.header').addClass('on')
+        } else {
+            $('.header').removeClass('on')
+        }
     })
 
-    $('.header .gnb .hard').on('click', function (){
-        $('.header .lnb_box .hard').toggleClass('on')
-    })
-
-    $('.header .gnb .service').on('click', function (){
-        $('.header .lnb_box .service').toggleClass('on')
-    })
-
-    $('.header .gnb .news').on('click', function (){
-        $('.header .lnb_box .news').toggleClass('on')
-    })
-
-    $('.header .gnb .buy').on('click', function (){
-        $('.header .lnb_box .buy').toggleClass('on')
-    })
-
-    $('.header .gnb .cus').on('click', function (){
-        $('.header .lnb_box .cus').toggleClass('on')
-    })
+    $('.gnb ul>li>a').on('click', function (e) {
+        e.preventDefault();
+        //$('.lnb').toggleClass('on');
+        $(this).next().stop().slideToggle();
+        $(this).parent().siblings().find('.lnb').stop().slideUp();
+    });
 
     $('.g_slide').slick({
         arrows: false,
