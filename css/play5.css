@@ -214,6 +214,27 @@
     background: url(../imges/ms_battle.webp)no-repeat center center/cover;
 }
 
+@media (max-width: 768px) {
+    .main_game .itm01 {
+        background: url(../imges/ms_ffxiv.webp)no-repeat 60% center/cover;
+    }
+    .main_game .itm02 {
+        background: url(../imges/ms_street.webp)no-repeat center center/cover;
+    }
+    .main_game .itm03 {
+        background: url(../imges/ms_sy.webp)no-repeat center center/cover;
+    }
+    .main_game .itm04 {
+        background: url(../imges/ms_avatar.webp)no-repeat center center/cover;
+    }
+    .main_game .itm05 {
+        background: url(../imges/ms_season04.webp)no-repeat center center/cover;
+    }
+    .main_game .itm06 {
+        background: url(../imges/ms_battle.webp)no-repeat center center/cover;
+    }
+}
+
 
 .main_game .itm .txt {
     max-width: 1200px;
@@ -373,22 +394,29 @@
     height: 100%;
 }
 
+@media (max-width: 768px) {
+    .main_product .itm {
+        grid-template-columns: repeat(1, 5fr);
+    }
+    
+}
+
 .main_product .itm .txt{
     margin: auto 0;
     grid-column: 1/3;
 }
 
 .main_product .itm .txt h2 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 500;
     color: #222;
     margin: 0 0 10px 0;
 }
 
 .main_product .itm .txt p {
-    font-size: 15px;
-    font-weight: 300;
-    color: #222;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
     margin: 0 0 70px 0;
 }
 
@@ -403,7 +431,7 @@
 
 .main_product .itm .img_b{
     grid-column: 3/6;
-    height: 100%;
+    height: 500px;
 }
 
 .main_product .itm01 .img_b {
@@ -816,13 +844,21 @@
    gap: 30px;
 }
 
-.main_look .look .itm figure {
-    height: 283.11px;
+.main_look .look .itm {
+ 
 }
 
-.main_look .look .itm figure img{
-    height: 100%;
-    overflow: hidden;
+.main_look .look .look01 figure {
+    background: url(../imges/mla_01.webp)no-repeat center center/contain;
+    height: 200px;
+}
+.main_look .look .look02 figure {
+    background: url(../imges/mla_02.webp)no-repeat center center/contain;
+    height: 200px;
+}
+.main_look .look .look03 figure {
+    background: url(../imges/mla_03.webp)no-repeat center center/contain;
+    height: 200px;
 }
 
 .main_look .look .itm h3 {
@@ -1450,14 +1486,14 @@
 
     .main_game .itm {
         position: relative;
-        height: calc(100vh);
+        height: 500px;
     }
 
     .main_game .itm01 {
-        background: url(../imges/ms_ffxiv.webp)no-repeat top right/cover;
+        background: url(../imges/ms_ffxiv.webp)no-repeat 90% center/cover;
     }
     .main_game .itm02 {
-        background: url(../imges/ms_street.webp)no-repeat top right/cover;
+        background: url(../imges/ms_street.webp)no-repeat 90% center/cover;
     }
     .main_game .itm03 {
         background: url(../imges/ms_sy.webp)no-repeat top right/cover;
@@ -1540,13 +1576,12 @@
     .main_product 
 
     .main_product .itm {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        grid-template-columns: repeat(1, 5fr);
     }
 
-    .main_product .itm img {
-        height: 226.5px;
+    .main_product .itm .txt {
+        grid-column: 1/2;
+        grid-row: 1/3;
     }
 
     .main_product .itm .txt h2 {
@@ -1563,13 +1598,9 @@
         padding: 10px 20px;
     }
 
-    .main_product .itm .img_b img {
-        width: 100%;
-    }
-
     .main_product .itm .img_b{
-        display: flex;
-        justify-content: flex-end;
+        grid-column: 1/2;
+        grid-row: 3/5;
     }
 
     .main_product .p_bottom .btn {

@@ -45,6 +45,14 @@ $(function () {
         arrows: false,
         fade: true,
         draggable: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    asNavFor: '.p_bottom'
+                }
+            }
+        ]
     })
 
     $('.main_product .p_bottom .btn').on('click', function () {
@@ -94,6 +102,7 @@ $(function () {
     $('.p_bottom').slick({
         arrows: false,
         slidesToShow: 7,
+        infinite: true,
         responsive: [
             {
               breakpoint: 768,
@@ -101,6 +110,7 @@ $(function () {
                 centerMode: true,
                 centerPadding: '100px',
                 slidesToShow: 1,
+                asNavFor: '.p_slide',
               }
             },
           ]
