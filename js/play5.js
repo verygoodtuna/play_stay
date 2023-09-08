@@ -18,6 +18,15 @@ $(function () {
     $('.g_slide').slick({
         arrows: false,
         fade: true,
+        autoplay: true, 
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    asNavFor: '.main_gameban .g_con'
+                }
+            }
+        ]
     })
 
     $('.main_gameban .g_con .con').on('click', function () {
@@ -34,8 +43,9 @@ $(function () {
               breakpoint: 768,
               settings: {
                 centerMode: true,
-                centerPadding: '40px',
+                centerPadding: '100px',
                 slidesToShow: 1,
+                asNavFor: '.g_slide'
               }
             },
           ]
