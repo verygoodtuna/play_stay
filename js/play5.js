@@ -13,8 +13,10 @@ $(function () {
         if($(window).width() < 768) {
                 $(this).next().stop().toggleClass('on');
                 $(this).parent().siblings().find('.lnb').stop().removeClass('on');
+                $(this).find('figure').toggleClass('on');
+                $(this).parent().siblings().find('figure').stop().removeClass('on');
             }
-            
+
             else {
                 $(this).next().stop().slideToggle();
                 $(this).parent().siblings().find('.lnb').stop().slideUp();
@@ -24,7 +26,7 @@ $(function () {
     $('.g_slide').slick({
         arrows: false,
         fade: true,
-        autoplay: false, 
+        autoplay: true, 
         responsive: [
             {
                 breakpoint: 768,
@@ -88,6 +90,36 @@ $(function () {
 
     $('.main_launch .l_btn .right').on('click', function () {
         $('.l_slide').slick('slickNext')
+    })
+
+    $('.news_img').slick({
+        arrows: false,
+        slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: '100px',
+                }
+            }
+        ]
+    })
+
+    $('.look').slick ({
+        arrows: false,
+        slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: '80px',
+                }
+            }
+        ]
     })
 
     $('.ln_slide').slick({
