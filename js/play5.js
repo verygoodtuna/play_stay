@@ -23,6 +23,10 @@ $(function () {
             }
     });
 
+    $('.gnb').on('wheel', function (e) {
+        e.preventDefault();
+    })
+
     $('.g_slide').slick({
         arrows: false,
         fade: true,

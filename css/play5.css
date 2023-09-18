@@ -149,30 +149,72 @@
 @media (max-width: 768px) {
     .header .h_bottom .gnb ul>li figure {
         display: inline-block;
+        height: 30px;
+        transition: 0.3s;
     }
 
     .header .h_bottom .gnb ul>li figure.on {
         height: 30px;
     }
 
-    .header .h_bottom .gnb ul>li figure.on .icon01 {
+    .header .h_bottom .gnb ul>li figure.on img{
+        display: none;
+    }
+
+    .header .h_bottom .gnb ul>li .icon01 {
+        background: url(../imges/game_icon.png)no-repeat center center/contain;
+    }
+
+    .header .h_bottom .gnb ul>li .icon01.on {
         background: url(../imges/Bgame_icon.png)no-repeat center center/contain;
     }
-    .header .h_bottom .gnb ul>li figure.on .icon02 {
+
+    .header .h_bottom .gnb ul>li .icon02 {
+        background: url(../imges/hard_icon.png)no-repeat center center/contain;
+    }
+
+    .header .h_bottom .gnb ul>li .icon02.on {
         background: url(../imges/Bhard_icon.png)no-repeat center center/contain;
     }
-    .header .h_bottom .gnb ul>li figure.on .icon03 {
+
+    .header .h_bottom .gnb ul>li .icon03 {
+        background: url(../imges/service_icon.png)no-repeat center center/contain;
+    }
+
+    .header .h_bottom .gnb ul>li .icon03.on {
         background: url(../imges/Bservice_icon.png)no-repeat center center/contain;
     }
-    .header .h_bottom .gnb ul>li figure.on .icon04 {
+
+    .header .h_bottom .gnb ul>li .icon04 {
+        background: url(../imges/news_icon.png)no-repeat center center/contain;
+        height: 18px;
+    }
+
+    .header .h_bottom .gnb ul>li .icon04.on {
         background: url(../imges/Bnews_icon.png)no-repeat center center/contain;
+        height: 18px;
     }
-    .header .h_bottom .gnb ul>li figure.on .icon05 {
+
+    .header .h_bottom .gnb ul>li .icon05 {
+        background: url(../imges/buy_icon.png)no-repeat center center/contain;
+        height: 24px;
+    }
+
+    .header .h_bottom .gnb ul>li .icon05.on {
         background: url(../imges/Bbuy_icon.png)no-repeat center center/contain;
+        height: 24px;
     }
-    .header .h_bottom .gnb ul>li figure.on .icon06 {
+
+    .header .h_bottom .gnb ul>li .icon06 {
+        background: url(../imges/cus_icon.png)no-repeat center center/contain;
+        height: 20px;
+    }
+
+    .header .h_bottom .gnb ul>li .icon06.on {
         background: url(../imges/Bcus_icon.png)no-repeat center center/contain;
+        height: 20px;
     }
+
 }
 
 .header .h_bottom .gnb ul>li:hover {
@@ -441,6 +483,7 @@
         padding: 8px 18px;
         font-size: 12px;
         border-radius: 6px;
+        z-index: 999;
     }
     
     .header .h_bottom .customer input {
@@ -651,6 +694,22 @@
         transform: translate(-50%, 0);
     }
 
+    .main_game .itm02 .itm_box {
+        top: 45%;
+    }
+
+    .main_game .itm04 .itm_box {
+        top: 42%;
+    }
+
+    .main_game .itm05 .itm_box {
+        top: 38%;
+    }
+
+    .main_game .itm06 .itm_box {
+        top: 50%;
+    }
+
     .main_game .itm .itm_box figure {
         transform: translate(0, 0);
         height: 50px;
@@ -663,24 +722,24 @@
 
     .main_game .itm01 .itm_box figure{
         background: url(../imges/ms_ffxiv_logo.webp)no-repeat center center/contain;
-        height: 50px;
+        height: 30%;
     }
     .main_game .itm02 .itm_box figure{
         background: url(../imges/ms_street_logo.webp)no-repeat center center/contain;
-        height: 50px;
+        height: 30%;
     }
 
     .main_game .itm04 .itm_box figure{
-        background: url(../imges/ms_avatar_logo.webp)no-repeat center center/contain;
-        height: 50px;
+        background: url(../imges/ms_avatar_logo.webp)no-repeat center center/cover;
+        height: 40%;
     }
     .main_game .itm05 .itm_box figure{
-        background: url(../imges/ms_season04_logo.webp)no-repeat center center/contain;
-        height: 50px;
+        background: url(../imges/ms_season04_logo.png)no-repeat center center/contain;
+        height: 50%;
     }
     .main_game .itm06 .itm_box figure{
         background: url(../imges/ms_battle_logo.webp)no-repeat center center/contain;
-        height: 50px;
+        height: 25%;
     }
 
     .main_game .itm .txt {
