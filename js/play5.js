@@ -116,7 +116,7 @@ $(function () {
                 settings: {
                     slidesToShow: 1,
                     centerMode: true,
-                    centerPadding: '60px',
+                    centerPadding: '80px',
                 }
             }
         ]

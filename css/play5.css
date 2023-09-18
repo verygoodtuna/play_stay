@@ -1289,7 +1289,7 @@
 
     .main_news .news03 .txt span {
         position: absolute;
-        bottom: 0;
+        bottom: -10px;
         left: 50%;
         transform: translate(-50%, 0);
     }
@@ -1310,8 +1310,10 @@
     .main_news .news03 .news_img .img span {
         font-size: 12px;
         font-weight: 400;
-        line-height: 18px;
+        line-height: 16px;
         color: rgba(255, 255, 255, 0.9);
+        padding: 0 10px;
+        word-break: keep-all;
     }
 
     .main_news .news03 .news_img .img img{
