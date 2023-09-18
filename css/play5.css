@@ -434,7 +434,13 @@
     }
 
     .header .h_bottom .customer strong {
-        display: none;
+        position: absolute;
+        top: 50%;
+        left: 65px;
+        transform: translate(0, -50%);
+        padding: 8px 18px;
+        font-size: 12px;
+        border-radius: 6px;
     }
     
     .header .h_bottom .customer input {
@@ -1390,7 +1396,7 @@
         left: 50%;
         transform: translate(-50%, 0);
         width: 100%;
-        height: 50%;
+        height: 43.5%;
         text-align: center;
     }
 
@@ -1500,6 +1506,55 @@
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .main_launch {
+        padding: 50px 0;
+    }
+
+    .main_launch .inner {
+        padding: 0 20px;
+    }
+
+    .main_launch .l_slide .tit {
+        margin: 0 0 24px 0;
+    }
+    
+    .main_launch .l_slide .tit h2 {
+        font-size: 30px;
+    }
+
+    .main_launch .l_slide .tit p {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .main_launch .game_box {
+        display: grid;
+        grid-template-columns: repeat(3, 4fr);
+        gap: 16px;
+        padding: 0;
+    }
+
+    .main_launch .game_box .game figure img {
+        border-radius: 10px;
+        margin: 0 0 5px 0;
+    }
+
+    .main_launch .game_box .game figure figcaption {
+        font-size: 12px;
+        font-weight: 400;
+        height: 11px;
+    }
+
+    .main_launch .l_btn {
+        top: -1%;
+    }
+
+    .main_launch .l_btn i {
+        font-size: 12px;
+    }
+}
+
 .main_look {
     padding: 100px 0;
 }
@@ -1529,8 +1584,17 @@
 }
 
 @media (max-width: 768px) {
+    .main_look {
+        padding: 50px 0;
+    }
+
+    .main_look .l_inner {
+        padding: 0;
+    }
+
     .main_look .tit {
         margin: 0 0 32px 0;
+        padding: 0 20px;
     }
 
     .main_look .tit h2 {
@@ -1597,6 +1661,7 @@
         font-weight: 400;
         color: #666;
         word-break: keep-all;
+        margin: 0 0 16px 0;
     }
 }
 
@@ -1727,6 +1792,64 @@
     border-radius: 50px;
 }
 
+@media (max-width: 768px) {
+    .main_store {
+        padding: 50px 0;
+    }
+
+    .main_store .inner {
+        grid-template-columns: repeat(1, 2fr);
+        gap: 16px;
+        padding: 0 20px;
+    }
+
+    .main_store .txt {
+        text-align: center;
+    }
+
+    .main_store .txt h2 {
+        font-size: 20px;
+        margin: 0 0 5px 0;
+        font-weight: 500;
+    }
+
+    .main_store .txt p {
+        margin: 0 0 20px 0;
+        font-size: 12px;
+        font-weight: 400;
+        color: #666;
+    }
+
+    .main_store .txt span {
+        margin: 0 0 20px 0;
+    }
+
+    .main_store .txt span a {
+        font-size: 12px;
+        font-weight: 400;
+        padding: 8px 20px;
+    }
+
+    .main_store .txt span a::before {
+        display: none;
+    }
+
+    .main_store .txt figure {
+        width: 80%;
+        height: 70px;
+        margin: 0 auto 16px auto;
+    }
+
+    .main_store figure {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .main_store figure img {
+        border-radius: 15px;
+    }
+}
+
 .main_lanews {
     padding: 100px 0;
     position: relative;
@@ -1813,6 +1936,54 @@
     word-break: break-all;
 }
 
+@media (max-width: 768px) {
+    .main_lanews {
+        padding: 50px 0;
+    }
+
+    .main_lanews h2 {
+        font-size: 26px;
+        margin: 0 0 12px 0;
+        padding: 0 20px;
+    }
+
+    .main_lanews .ln_slide .lanews .container{
+        min-height: 448px;
+    }
+
+    .main_lanews .ln_slide .lanews .container {
+        padding: 20px;
+    }
+
+    .main_lanews .ln_slide .lanews .container img {
+        margin: 0 0 20px 0;
+    }
+
+    .main_lanews .ln_slide .lanews .container .txt {
+        word-break: break-all;
+    }
+
+    .main_lanews .ln_slide .lanews .container .txt h3 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .main_lanews .ln_slide .lanews .container .txt p {
+        font-size: 12px;
+        font-weight: 400;
+        color: #666;
+    }
+
+    .main_lanews .ln_slide .lanews .container .people .p_txt span {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .main_lanews .ln_slide .lanews .container .people .p_txt strong {
+        font-size: 12px;
+    }
+}
+
 .main_lanews .ln_slide .lanews .people {
     display: flex;
     align-items: center;
@@ -1871,6 +2042,17 @@
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    .main_lanews .ln_btn {
+        padding: 0 20px;
+    }
+
+    .main_lanews .ln_btn i {
+        font-size: 12px;
+        padding: 14px;
+    }
+}
+
 .main_media {
     padding: 50px 0;
     background: #f5f7fa;
@@ -1920,6 +2102,21 @@
     color: #fff;
 }
 
+@media (max-width: 768px) {
+    .main_media .sns h2 {
+        margin: 0 0 16px 0;
+    }
+
+    .main_media .sns ul {
+        gap: 16px;
+    }
+
+    .main_media .sns ul>li i {
+        font-size: 24px;
+        padding: 16px;
+    }
+}
+
 .main_marvel {
     padding: 50px 0;
 }
@@ -1941,6 +2138,27 @@
     font-size: 16px;
     font-weight: 400;
     color: #222;
+}
+
+@media (max-width: 768px) {
+    .main_marvel {
+        text-align: center;
+    }
+
+    .main_marvel img {
+        height: 60px;
+        width: 50%;
+        margin: 0 0 16px 0;
+    }
+
+    .main_marvel span {
+        font-size: 12px;
+        margin: 0 0 6px 0;
+    }
+
+    .main_marvel strong {
+        font-size: 12px;
+    }
 }
 
 .footer {
@@ -1968,6 +2186,16 @@
 
 .footer h2 img{
     height: 50px;
+}
+
+@media (max-width: 768px) {
+    .footer .inner {
+        padding: 0 20px;
+    }
+
+    .footer h2 img {
+        height: 40px;
+    }
 }
 
 .footer .announcement {
@@ -2013,6 +2241,29 @@
 .footer .announcement ul>li .sns>li i{
     font-size: 30px;
     font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .footer .announcement {
+        gap: 16px;
+    }
+
+    .footer .announcement h3 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .footer .announcement ul>li {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .footer .announcement ul>li .sns {
+        margin: 0;
+        gap: 6px;
+    }
 }
 
 .footer .company {
@@ -2112,6 +2363,55 @@
     background: rgba(255, 255, 255, 0.3);
 }
 
+@media (max-width: 768px) {
+    .footer .company .copy {
+        font-size: 12px;
+        line-height: 16px;
+        margin: 0 0 6px 0;
+    }
+
+    .footer .company img {
+        height: 60px;
+    }
+
+    .footer .company .address {
+        margin: 0 0 30px 0;
+    }
+
+    .footer .company .address::before {
+        bottom: -15px;
+    }
+
+    .footer .company .address>li {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .footer .company .etc .ko a {
+        gap: 12px;
+    }
+
+    .footer .company .etc .ko .asia {
+        font-size: 24px;
+    }
+
+    .footer .company .etc .ko span {
+        font-size: 12px;
+    }
+
+    .footer .company .etc ul {
+        gap: 12px;
+    }
+
+    .footer .company .etc ul>li {
+        font-size: 12px;
+    }
+
+    .footer .company .etc ul>li~li::before {
+        left: -6px;
+    }
+}
+
 .m_btn {
     display: none;
 }
@@ -2126,16 +2426,7 @@
         text-align: center;
     }
 
-    .main_launch .game_box {
-        display: grid;
-        grid-template-columns: repeat(3, 4fr);
-        gap: 10px;
-    }
-
-    .main_launch .game_box .game figure img {
-        margin: 0 0 5px 0;
-    }
-
+  
 
     .main_news .news01 .inner{
         display: grid;
@@ -2152,71 +2443,7 @@
         text-shadow: 0 0 5px #7c7c7c
     }
 
-    /* .main_news .news03 .txt {
-        text-align: center;
-        text-shadow: 0 0 5px #7c7c7c
-    }
 
-    .main_news .news03 .news_img {
-        gap: 10px;
-    } 
-
-    .main_news .news03 .news_img .img span {
-        font-size: 14px;
-        line-height: 16px;
-    } */
-
-    /* .main_news .news04 .inner {
-        justify-content: center;
-
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .main_news .news04 .txt {
-        text-align: center;
-    } */
-
-    .main_store .inner {
-        grid-template-columns: repeat(1, 2fr);
-        gap: 20px;
-    }
-
-    .main_store .txt img {
-       width: 100%;
-       padding: 0 30px;
-    }
-
-    .main_store .txt {
-        text-align: center;
-        gap: 10px;
-    }
-
-    .main_store .txt h2 {
-        font-size: 20px;
-        margin: 0 0 5px 0;
-    }
-
-    .main_store .txt p {
-        margin: 0 0 20px 0;
-        font-size: 12px;
-    }
-
-    .main_store .txt span {
-        margin: 0 0 20px 0;
-    }
-
-    .main_lanews h2 {
-        font-size: 26px;
-        margin: 0 0 20px 0;
-    }
-
-    .main_marvel {
-        text-align: center;
-    }
 
     .footer .announcement .list .sns>li i{
         font-size: 16px;
